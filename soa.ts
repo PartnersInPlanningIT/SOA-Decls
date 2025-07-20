@@ -1,9 +1,7 @@
 import * as ins from "./insurance";
-import * as bonds from "./bonds"
-import * as superann from "./super"
-import * as inv from "./investments"
-
-
+import * as bonds from "./bonds";
+import * as superann from "./super";
+import * as inv from "./investments";
 
 export interface SOAState {
   id?: number;
@@ -23,13 +21,13 @@ export interface SOAFees {
   partner: ClientFees;
   computed?: {
     super: {
-      client: superann.SuperDetails,
-      partner: superann.SuperDetails
-    },
-    ios: inv.InvestmentDetails,
-    bonds: bonds.BondDetails,
-    ins: ins.InsuranceDetails,
-  }
+      client: superann.SuperDetails;
+      partner: superann.SuperDetails;
+    };
+    ios: inv.InvestmentDetails;
+    bonds: bonds.BondDetails;
+    ins: ins.InsuranceDetails;
+  };
 }
 
 export interface ClientFees {
@@ -44,9 +42,6 @@ export interface ClientFees {
   bondAdmin: number;
   bondInvestment: number;
 }
-
-
-
 
 export interface BaseClientInfo {
   crmId: string;
@@ -70,6 +65,7 @@ export interface BaseClientInfo {
   superProvider: string;
   superType: string;
   riskProfile: string;
+  googleDrive: string;
   //more to follow
 }
 
