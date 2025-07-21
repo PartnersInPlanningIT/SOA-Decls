@@ -24,7 +24,6 @@ export interface InvestmentDetails {
 export interface ProposedInvestment {
   investmentName: string;
   newBalance: number;
-  allocation: number;
 }
 
 export interface AssetClassAllocation {
