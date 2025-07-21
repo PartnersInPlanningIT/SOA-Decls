@@ -15,7 +15,6 @@ export interface ProposedAssetClassAllocation {
   proposed: AssetClassAllocation;
 }
 
-
 export interface SOABonds {
   client: ClientBonds;
   partner: ClientBonds;
@@ -52,7 +51,6 @@ export interface BondOption {
   balance: number;
   newBalance: number;
 }
-
 
 export interface BondBeneficiary {
   name: string;

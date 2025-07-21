@@ -1,5 +1,3 @@
-
-
 export interface SOAInsurance {
   client: ClientInsurance;
   partner: ClientInsurance;
@@ -50,4 +48,3 @@ export interface InsuranceDetails {
   IPPremiumPM: number;
   productProvider: string;
 }
-

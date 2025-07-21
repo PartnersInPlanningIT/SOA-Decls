@@ -1,5 +1,3 @@
-
-
 export interface ClientInvestments {
   proposedShareProv: string;
   proposedMngdFundProv: string;
@@ -11,6 +9,8 @@ export interface ClientInvestments {
   currMngdFundInvOpts: InvestmentOption[];
   riskProfile: string;
   assetClassAllocations: AssetClassAllocation;
+  proposedShareInvestments: ProposedInvestment[];
+  proposedMngdFundInvestments: ProposedInvestment[];
 }
 
 export interface InvestmentDetails {
@@ -19,6 +19,12 @@ export interface InvestmentDetails {
   buySellFee: number;
   totalShareTradesFee: number;
   mngdFundFee: number;
+}
+
+export interface ProposedInvestment {
+  investmentName: string;
+  newBalance: number;
+  allocation: number;
 }
 
 export interface AssetClassAllocation {
@@ -31,8 +37,6 @@ export interface ProposedAssetClassAllocation {
   target: AssetClassAllocation;
   proposed: AssetClassAllocation;
 }
-
-
 
 export interface SOAInvestments {
   client: ClientInvestments;
