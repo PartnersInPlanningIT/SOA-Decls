@@ -8,7 +8,7 @@ export interface ClientInvestments {
   currShareInvOpts: InvestmentOption[];
   currMngdFundInvOpts: InvestmentOption[];
   riskProfile: string;
-  assetClassAllocations: AssetClassAllocation;
+  assetClassAllocations: ProposedAssetClassAllocation;
   proposedShareInvestments: ProposedInvestment[];
   proposedMngdFundInvestments: ProposedInvestment[];
 }
