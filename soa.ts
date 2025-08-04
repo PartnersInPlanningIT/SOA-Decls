@@ -13,6 +13,7 @@ export interface SOAState {
   superann: superann.SOASuper;
   bonds: bonds.SOABonds;
   adviser: string;
+  appendices: string[];
 }
 
 export interface SOAFees {
