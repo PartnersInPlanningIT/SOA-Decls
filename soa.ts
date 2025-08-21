@@ -12,7 +12,7 @@ export interface SOAState {
   investments: inv.SOAInvestments;
   superann: superann.SOASuper;
   bonds: bonds.SOABonds;
-  meeting_date: string;
+  meetingDate: string;
   adviser: string;
   appendices: string[];
 }
