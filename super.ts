@@ -1,6 +1,3 @@
-
-
-
 export interface SOASuper {
   client: ClientSuper;
   partner: ClientSuper;
@@ -39,15 +36,12 @@ export interface SuperBlock {
   name: string;
 }
 
-
 export interface AssetAllocation {
   name: string;
   currApproxAlloc: number;
   targetAlloc: number;
   proposedAlloc: number;
 }
-
-
 
 export interface SuperAccount {
   provider: string;
@@ -56,17 +50,14 @@ export interface SuperAccount {
   balance: number;
 }
 
-
 export interface SuperProposed {
   nccAmt: number;
   salarySacrificeAmt: number;
   summaryPages: string;
   totalProposedBalance: number;
   recommendedPensionPA: number;
-  dateOfMeeting: Date;
   proposedInvestments: SuperInvestmentOption[];
 }
-
 
 export interface SuperInvestmentOption {
   name: string;
@@ -75,8 +66,6 @@ export interface SuperInvestmentOption {
   currBalance: number;
   newBalance: number;
 }
-
-
 
 export interface SuperDetails {
   totalCurrBalance: number;
@@ -100,4 +89,3 @@ export interface SuperDetails {
   currProductFee: number;
   proposedProductFee: number;
 }
-
