@@ -24,6 +24,7 @@ export interface SOABonds {
 
 export interface ClientBonds {
   provider: string;
+  owner: string;
   initialAmt: number;
   regularContribAmt: number;
   regularContribPeriod: string;
