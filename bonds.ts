@@ -32,7 +32,7 @@ export interface ClientBonds {
 
 export interface BondAccount {
   name: string;
-  balance: string;
+  balance: number;
   investments: {
     name: string;
     balance: number;
