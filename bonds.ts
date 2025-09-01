@@ -17,40 +17,36 @@ export interface ProposedAssetClassAllocation {
 
 export interface SOABonds {
   client: ClientBonds;
-  partner: ClientBonds;
   includeClient: boolean;
-  includePartner: boolean;
 }
 
 export interface ClientBonds {
   provider: string;
   owner: string;
   initialAmt: number;
-  regularContribAmt: number;
-  regularContribPeriod: string;
-  currBondAccts: BondAccount[];
-  currBondOptions: BondOption[];
-  beneficiaries: BondBeneficiary[];
+  currBonds: BondAccount[];
   assetClassAllocations: ProposedAssetClassAllocation;
   riskProfile: string;
-  proposedInvestments: ProposedInvestment;
-}
-
-export interface ProposedInvestment {
-  name: string;
-  alloc: number;
+  proposedInvestmentOptions: BondInvestmentOption[];
 }
 
 export interface BondAccount {
   name: string;
-  balance: number;
+  balance: string;
+  investments: {
+    name: string;
+    balance: number;
+    newBalance: number;
+  }[];
 }
 
-export interface BondOption {
-  accountName: string;
-  investmentName: string;
-  balance: number;
-  newBalance: number;
+export interface BondInvestmentOption {
+  regularContribAmt: number;
+  regularContribPeriod: string;
+  investments: {
+    name: string;
+    balance: number;
+  }[];
 }
 
 export interface BondBeneficiary {
