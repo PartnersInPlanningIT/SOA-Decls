@@ -47,6 +47,7 @@ export interface BondInvestmentOption {
     name: string;
     balance: number;
   }[];
+  beneficiaries: BondBeneficiary[];
 }
 
 export interface BondBeneficiary {
