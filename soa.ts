@@ -68,7 +68,7 @@ export interface BaseClientInfo {
   superType: string;
   riskProfile: string;
   googleDrive: string;
-  spInfo?: SPInfo;
+  spInfo: SPInfo;
 }
 
 export interface SPInfo {
