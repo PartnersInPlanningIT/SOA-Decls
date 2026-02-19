@@ -68,7 +68,7 @@ export interface BaseClientInfo {
   superType: string;
   riskProfile: string;
   googleDrive: string;
-  //more to follow
+  includeCentrelink: boolean;
 }
 
 export interface ClientInfo {
