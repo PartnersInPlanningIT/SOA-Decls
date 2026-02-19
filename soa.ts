@@ -68,7 +68,14 @@ export interface BaseClientInfo {
   superType: string;
   riskProfile: string;
   googleDrive: string;
+  spInfo?: SPInfo;
+}
+
+export interface SPInfo {
   includeCentrelink: boolean;
+  costRRP: number;
+  costDiscounted: number;
+  discountPartner: string;
 }
 
 export interface ClientInfo {
