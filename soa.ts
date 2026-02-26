@@ -15,6 +15,7 @@ export interface SOAState {
   meetingDate: string;
   adviser: string;
   appendices: string[];
+  summaryPage: string;
 }
 
 export interface SOAFees {

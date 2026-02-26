@@ -53,7 +53,6 @@ export interface SuperAccount {
 export interface SuperProposed {
   nccAmt: number;
   salarySacrificeAmt: number;
-  summaryPages: string;
   totalProposedBalance: number;
   recommendedPensionPA: number;
   proposedInvestments: SuperInvestmentOption[];
