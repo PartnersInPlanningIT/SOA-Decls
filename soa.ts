@@ -77,6 +77,7 @@ export interface SPInfo {
   costRRP: number;
   costDiscounted: number;
   discountPartner: string;
+  superProviders: string[];
 }
 
 export interface ClientInfo {
