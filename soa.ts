@@ -70,6 +70,7 @@ export interface BaseClientInfo {
   riskProfile: string;
   googleDrive: string;
   spInfo: SPInfo;
+  postalAddress?: string;
 }
 
 export interface SPInfo {
