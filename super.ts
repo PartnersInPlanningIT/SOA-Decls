@@ -64,7 +64,7 @@ export interface SecSuperProposed {
   totalProposedBalance: number;
   type: string;
   provider: string;
-  proposedInvestments: SuperInvestmentOption[];
+  proposedInvestments: ProposedSuperInvestment[];
 }
 
 export interface SuperInvestmentOption {
