@@ -9,6 +9,8 @@ export interface ClientSuper {
   currentSuper: SuperAccount[];
   currentInvestmentOptions: SuperInvestmentOption[];
   proposed: SuperProposed;
+  //optional secondary acct
+  secProposed: SecSuperProposed;
   allocations: AssetAllocation[];
   blocks: SuperBlock[];
   proposedInvestments: ProposedSuperInvestment[];
@@ -55,6 +57,13 @@ export interface SuperProposed {
   salarySacrificeAmt: number;
   totalProposedBalance: number;
   recommendedPensionPA: number;
+  proposedInvestments: SuperInvestmentOption[];
+}
+
+export interface SecSuperProposed {
+  totalProposedBalance: number;
+  type: string;
+  provider: string;
   proposedInvestments: SuperInvestmentOption[];
 }
 
