@@ -48,7 +48,6 @@ export interface AssetAllocation {
 export interface SuperAccount {
   provider: string;
   type: string;
-  name: string;
   balance: number;
 }
 
@@ -73,6 +72,7 @@ export interface SuperInvestmentOption {
   newAllocation: number;
   currBalance: number;
   newBalance: number;
+  account: string;
 }
 
 export interface SuperDetails {
