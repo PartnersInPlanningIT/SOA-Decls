@@ -15,6 +15,25 @@ export interface ClientSuper {
   blocks: SuperBlock[];
   proposedInvestments: ProposedSuperInvestment[];
   assetClassAllocations: ProposedAssetClassAllocation;
+  strategy?: SuperStrategy;
+}
+
+export interface SuperStrategy {
+  recontribution?: RecontributionStrategy
+}
+
+export interface RecontributionStrategy {
+  withdrawAmt: number;
+  recontributeAmt: number;
+  sourceOwner: string;
+  sourceExisting: boolean;
+  sourceName: string;
+  sinkOwner: string;
+  sinkExisting: boolean;
+  sinkName: string;
+  recontributionTime: string;
+  currentBal: number;
+  taxableBal: number;
 }
 
 export interface AssetClassAllocation {
