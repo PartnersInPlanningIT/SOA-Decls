@@ -15,11 +15,11 @@ export interface ClientSuper {
   blocks: SuperBlock[];
   proposedInvestments: ProposedSuperInvestment[];
   assetClassAllocations: ProposedAssetClassAllocation;
-  strategy?: SuperStrategy;
+  strategy: SuperStrategy;
 }
 
 export interface SuperStrategy {
-  recontribution?: RecontributionStrategy
+  recontribution: RecontributionStrategy
 }
 
 export interface RecontributionStrategy {
