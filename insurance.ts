@@ -19,7 +19,7 @@ export interface InsuranceCoverage {
   coverageAmount: number;
   annualPremium: number;
   premiumPostRebate: number;
-  waitPeriod: number;
+  waitPeriod: string;
   benefitPeriod: string;
   monthlyPremium: number;
 }
@@ -39,8 +39,8 @@ export interface InsuranceDetails {
   lifeTPDCover: number;
   traumaCover: number;
   IPCover: number;
-  IPWaitPeriod: number;
-  IPBenefitPeriod: number;
+  IPWaitPeriod: string;
+  IPBenefitPeriod: string;
   replacementOfIncome: number;
   otherPremiums: number;
   otherPremiumsPM: number;
